@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <title>我的书架 · 广应科图书馆</title>
+	  <link rel="stylesheet" href="css/bootstrap.min.css">
+	  <link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header class="site-header">
+		  <div class="container nav-wrap">
+			<a class="brand" href="home.html" aria-label="返回首页">
+			  <span class="brand-mark">图</span>
+			  <span><strong>广应科图书馆</strong><span>广州应用科技学院</span></span>
+			</a>
+			<button class="nav-toggle" type="button">菜单</button>
+			<ul class="main-nav">
+			  <li><a href="home.html">首页</a></li>
+			  <li class="has-sub"><button class="menu-btn" type="button">资源服务 ▾</button>
+				<ul class="submenu">
+				  <li><a href="list.html">资讯速递</a></li>
+				  <li><a href="content.html">阅读导赏</a></li>
+				  <li><a href="toDoList.html">我的书架</a></li>
+				</ul>
+			  </li>
+			  <li class="has-sub"><button class="menu-btn" type="button">关于本馆 ▾</button>
+				<ul class="submenu">
+				  <li><a href="group.html">本馆概况</a></li>
+				  <li><a href="member1Work.html">站点说明</a></li>
+				</ul>
+			  </li>
+			  <li><a href="register.html">读者登记</a></li>
+			</ul>
+		  </div>
+		</header>
+
+		<main>
+		  <section class="page-hero"><div class="container"><div class="breadcrumb"><a href="home.html">首页</a> / 我的书架</div><h1>我的书架</h1><p>记录待读与已读书目，把阅读计划留在浏览器本地，方便下次继续。</p></div></section>
+		  <section class="section"><div class="container">
+			<div class="todo-panel">
+			  <div class="row g-4">
+				<div class="col-md-6">
+				  <h2>添加书目</h2>
+				  <p>可记录借阅计划、专题阅读、数据库学习或读书活动任务。</p>
+				  <div class="d-flex gap-2"><input id="taskInput" class="form-control" type="text" placeholder="例如：完成《创新思维》导读笔记"><button id="addTask" class="btn btn-primary" type="button">加入书架</button></div>
+				</div>
+				<div class="col-md-6">
+				  <h2>使用提示</h2>
+				  <p>建议把任务写具体，例如“检索知网并保存 3 篇文献”“借阅专业教材并完成章节笔记”。记录保存在当前浏览器中，不涉及服务器与数据库。</p>
+				</div>
+			  </div>
+			  <div class="tabs"><button class="tab active" data-tab="pending">待读书目</button><button class="tab" data-tab="done">已完成</button></div>
+			  <div data-panel="pending"><ul id="pendingList" class="task-list"></ul></div>
+			  <div data-panel="done" style="display:none"><ul id="doneList" class="task-list"></ul></div>
+			  <div class="author">页面：我的书架 toDoList.html · 广州应用科技学院图书馆</div>
+			</div>
+		  </div></section>
+		</main>
+
+		<footer class="site-footer">
+		  <div class="container">
+			<p>广州应用科技学院图书馆 · 咨询电话：0758-2630969</p>
+			<p><a href="index.html">门户</a><a href="home.html">首页</a><a href="list.html">资讯</a><a href="content.html">导赏</a><a href="toDoList.html">书架</a><a href="group.html">概况</a><a href="register.html">登记</a></p>
+		  </div>
+		</footer>
+		<script src="js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <title>读者登记 · 广应科图书馆</title>
+	  <link rel="stylesheet" href="css/bootstrap.min.css">
+	  <link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header class="site-header">
+		  <div class="container nav-wrap">
+			<a class="brand" href="home.html" aria-label="返回首页">
+			  <span class="brand-mark"></span>
+			  <span><strong>广应科图书馆</strong><span>广州应用科技学院</span></span>
+			</a>
+			<button class="nav-toggle" type="button">菜单</button>
+			<ul class="main-nav">
+			  <li><a href="home.html">首页</a></li>
+			  <li class="has-sub"><button class="menu-btn" type="button">资源服务 ▾</button>
+				<ul class="submenu">
+				  <li><a href="list.html">资讯速递</a></li>
+				  <li><a href="content.html">阅读导赏</a></li>
+				  <li><a href="toDoList.html">我的书架</a></li>
+				</ul>
+			  </li>
+			  <li class="has-sub"><button class="menu-btn" type="button">关于本馆 ▾</button>
+				<ul class="submenu">
+				  <li><a href="group.html">本馆概况</a></li>
+				  <li><a href="member1Work.html">站点说明</a></li>
+				</ul>
+			  </li>
+			  <li><a href="register.html">读者登记</a></li>
+			</ul>
+		  </div>
+		</header>
+
+		<main>
+		  <section class="page-hero"><div class="container"><div class="breadcrumb"><a href="home.html">首页</a> / 读者登记</div><h1>读者登记</h1><p>填写读者信息，体验前端表单校验效果。本页为静态演示，不会提交到服务器。</p></div></section>
+		  <section class="section"><div class="container">
+			<div class="row g-4">
+			  <div class="col-md-6"><div class="form-panel"><h2>登记信息</h2>
+				<form id="registerForm" novalidate>
+				  <div class="field"><label for="username">读者姓名 / 用户名（必填）</label><input class="form-control" id="username" name="username" maxlength="30" placeholder="请输入姓名或学号昵称"><div class="hint" data-hint="username">支持中文、字母、数字和下划线，2-30 位。</div></div>
+				  <div class="field"><label for="password">登录密码（必填，6-16位）</label><input class="form-control" id="password" name="password" type="password" minlength="6" maxlength="16" placeholder="需包含字母和数字"><div class="hint" data-hint="password">长度 6-16 位，需同时包含字母和数字。</div></div>
+				  <div class="field"><label for="confirmPassword">确认密码</label><input class="form-control" id="confirmPassword" name="confirmPassword" type="password" minlength="6" maxlength="16" placeholder="请再次输入密码"><div class="hint" data-hint="confirmPassword">两次输入的密码必须一致。</div></div>
+				  <div class="field"><label for="phone">手机号</label><input class="form-control" id="phone" name="phone" placeholder="请输入11位手机号"><div class="hint" data-hint="phone">例如：13812345678。</div></div>
+				  <div class="field"><label for="email">邮箱</label><input class="form-control" id="email" name="email" placeholder="name@example.com"><div class="hint" data-hint="email">请输入常用邮箱地址。</div></div>
+				  <button class="btn btn-primary" type="submit">提交登记</button><span id="registerResult" class="hint"></span>
+				</form>
+			  </div></div>
+			  <div class="col-md-6"><article class="poem-card"><img src="img/thumb_books.jpg" alt="读者服务说明"><h3>服务说明</h3><p>本登记页用于课程前端演示，校验规则包括用户名、密码强度、手机号与邮箱格式。真实借阅、续借、座位预约等业务请以学校图书馆正式系统为准。</p><p>咨询电话：0758-2630969。广州校区与肇庆校区均可关注开馆安排与活动通知。</p></article></div>
+			</div>
+			<div class="author">页面：读者登记 register.html · 广州应用科技学院图书馆</div>
+		  </div></section>
+		</main>
+
+		<footer class="site-footer">
+		  <div class="container">
+			<p>广州应用科技学院图书馆 · 咨询电话：0758-2630969</p>
+			<p><a href="index.html">门户</a><a href="home.html">首页</a><a href="list.html">资讯</a><a href="content.html">导赏</a><a href="toDoList.html">书架</a><a href="group.html">概况</a><a href="register.html">登记</a></p>
+		  </div>
+		</footer>
+		<script src="js/main.js"></script>
+	</body>
+</html>
